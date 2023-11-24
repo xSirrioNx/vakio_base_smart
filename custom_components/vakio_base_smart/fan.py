@@ -55,7 +55,7 @@ async def async_setup_platform(
     """Установка платформы в hass"""
     basesmart = VakioBaseSmart(
         hass,
-        "basesmart1",
+        f"{conf.entry_id}_basesmart1",
         "Base Smart",
         conf.entry_id,
         LIMITED_SUPPORT,
